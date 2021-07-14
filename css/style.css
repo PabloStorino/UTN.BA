@@ -1,11 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
-    margin: 0% 10% 0% 10%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Montserrat', sans-serif;
 }
 
 ul{
     list-style-type: none;
-    margin: 0px;
+
 }
 
 /* BANNER */
@@ -35,7 +41,7 @@ header{
 
 /* Navbar */
 
-#nav1{
+.nav1{
     background-color: black;
     color: white;
     display: flex;
@@ -44,21 +50,26 @@ header{
     align-items: center;
 }
 
-#nav1 a, a:visited{
+.nav1 a, a:visited{
     color: white;
     text-decoration: none;
     
 }
 
-#nav1 a:active{
+.nav1 a:active{
     color:rgb(255, 236, 161);
 }
 
-#nav1 a:hover{
+.nav1 a:hover{
     color:rgb(255, 247, 236)
 }
 
-#nav1 ul li{
+.nav1 ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav1 ul li{
     margin: 5px;
     display: inline-block;
 }
@@ -70,7 +81,23 @@ main{
     grid-template-columns: 50% 1fr;
 }
 
+#datos ul{
+    padding: 0px;
+}
+
+#datos ul li{
+    margin: 5px;
+}
+
 /* Info */
+
+.dato{
+    font-weight: bold;
+}
+
+#datos ul{
+    margin: 0px;
+}
 
 /*Boxes*/
 
@@ -96,23 +123,7 @@ main{
     margin: 0px;
 }
 
-#contact{
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
 .box{
+    box-sizing: content-box;
     margin: 15px;
-}
-
-.contactline{
-    display: flex;
-    justify-content: left;
-}
-
-.contactline a, p{
-    margin: 0px; 
-    margin-left: 15px;
-    color: black;
-    text-decoration: none; 
 }
