@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -45,31 +45,63 @@
     <main>
         <div id="about" class="box">
             <div class="boxheader">
+                <i class="fas fa-glasses"></i>
                 <h2>Mi perfil</h2> 
                 <div class="bar"></div>
             </div>            
-
-            <p>Soy una persona comprometida con su trabajo. 
-                Me encanta buscar soluciones simples a problemas logicos. 
-                Tengo facilidad a la hora de comunicar mis ideas a otros.</p>
+            <div class="abouttxt">
+                <p>Desde chiquito siempre use mucho la compu, asi que al crecer eventualmente me dedique a la informatica. Me encanta
+                    resolver problemas logicos y el diseño, por lo que decidi ir por el lado de la programacion web full-stack.
+                </p>
+                <br>
+                <p>¡Siempre estoy dispuesto a dar una mano, ante cualquier duda mandame tu consulta por medio del <a href="contact.html" target="_blank">formulario!</a></p>
+            </div>
         </div>
         <div id="datos" class="box">
             <div class="boxheader">
                 <i class="fas fa-user"></i>
                 <h2>Datos</h2> 
                 <div class="bar"></div>
-            </div>           
-            <ul>
-                <li><span class="dato">Nombre:</span> Pablo Ernesto</li>
-                <li><span class="dato">Apellido:</span> Altamirano Storino</li>
-                <li><span class="dato">Nacimiento:</span> 24/10/1996</li>
-                <li><span class="dato">Residencia:</span> CABA, Buenos Aires, Argentina</li>
-            </ul>
+            </div>    
+            <div class="datoswrapper">
+                <div class="datos1">
+                    <p>Nombre:</p>
+                    <p>Apellido:</p>
+                    <p>Nacimiento:</p>
+                    <p>Residencia:</p>
+                </div>
+                <div class="datos2">
+                    <p>Pablo Ernesto</p>
+                    <p>Altamirano Storino</p>
+                    <p>24/10/1996</p>
+                    <p>CABA, Argentina</p>
+                </div>
+            </div>       
+
+        </div>
+        <div id="cursos" class="box">
+            <div class="boxheader">
+                <i class="fas fa-book-reader"></i>
+                <h2>Certificados</h2> 
+                <div class="bar"></div>
+            </div>
+            <div class="cursosbox">
+                <ul>
+                    <li><span class="estudiostitulo">Java Standard Web Programming</span></li>
+                    <li class="estxt"><i class="fas fa-school" ></i></i> EducacionIT</li>
+                    <li class="esttxt"><a href="https://imgbb.com/LddmNLq">Ver certificado</a></li>
+                </ul>
+                <ul>
+                    <li><span class="estudiostitulo">Full Stack Web Developer</span></li>
+                    <li class="estxt"><i class="fas fa-school" ></i></i> Mindhub / INET</li>
+                    <li class="esttxt"><a href="https://media-exp1.licdn.com/dms/image/C4D2DAQFnq7KIquTnng/profile-treasury-document-cover-images_800/0/1626321718180?e=1626411600&v=beta&t=Latv0vGUNpYCAIky877Lv7IILC33ydyX5NNqaA1DiPI">Ver certificado</a></li>
+                </ul>
+            </div>
         </div>
         <div id="educacion" class="box">
             <div class="boxheader">
                 <i class="fas fa-graduation-cap"></i>
-                <h2>Educacion</h2> 
+                <h2>Formacion</h2> 
                 <div class="bar"></div>
             </div>
             <div class="educacionbox">
@@ -85,11 +117,33 @@
                 </ul>
             </div>
         </div>
-        <div id="cursos" class="box">
+        <div id="conocimientosit" class="box">
             <div class="boxheader">
-                <i class="fas fa-book-reader"></i>
-                <h2>Formacion</h2> 
+                <i class="fas fa-laptop"></i>
+                <h2>Conocimientos IT</h2> 
                 <div class="bar"></div>
+            </div>
+            <div class="conocimientosbox">
+                <div class="itbox">
+                    <i class="fab fa-html5 fa-4x"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="itbox">
+                    <i class="fab fa-css3-alt fa-4x"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="itbox">
+                    <i class="fab fa-js-square fa-4x"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="itbox">
+                    <i class="fab fa-java fa-4x"></i>
+                    <p>Java</p>
+                </div>
+                <div class="itbox">
+                    <i class="fab fa-git-alt fa-4x"></i>
+                    <p>GIT</p>
+                </div>
             </div>
         </div>
     </main>
