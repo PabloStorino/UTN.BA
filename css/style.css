@@ -7,6 +7,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     font-family: 'Montserrat', sans-serif;
+    color: rgb(43, 43, 43);    
 }
 
 ul{
@@ -17,16 +18,14 @@ ul{
 /* BANNER */
 
 header{
-    /*background-color: #605b50;*/
-    padding: 2%;
+    padding: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #imgcv{
-    width: 20%;
-    height: 20%;
+    max-width: 20%;
     border-radius: 100%;
 }
 
@@ -35,50 +34,53 @@ header{
 }
 
 #titulocv h1{
-    font-weight: 700;
+    margin: 0px;
+    font-size: 3em;
+    font-weight: 600;
     font-style: italic;
+}
+
+#titulocv h2{
+    margin: 0px;
+    font-size: 2em;
+    font-weight: 300;
 }
 
 /* Navbar */
 
-.nav1{
-    background-color: black;
-    color: white;
+.nav2{
+    background-color: rgb(214, 214, 214);
+    color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border-top: 0.1em solid black;
+    border-bottom: 0.1em solid black;
 }
 
-.nav1 a, a:visited{
-    color: white;
-    text-decoration: none;
-    
+.nav2 a{
+    color: black;
 }
 
-.nav1 a:active{
-    color:rgb(255, 236, 161);
-}
-
-.nav1 a:hover{
-    color:rgb(255, 247, 236)
-}
-
-.nav1 ul{
+.nav2 ul{
     margin: 0px;
     padding: 0px;
 }
 
-.nav1 ul li{
-    margin: 5px;
+.nav2 ul li{
+    margin-right: 3px;
     display: inline-block;
-}
+    font-size: 0.8em;
+}   
 
 /* MAIN */
 
 main{
     display: grid;
-    grid-template-columns: 50% 1fr;
+    grid-template-columns: 50% 5% 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 1em;
 }
 
 #datos ul{
@@ -87,6 +89,10 @@ main{
 
 #datos ul li{
     margin: 5px;
+}
+
+#datos ul li{
+    font-size: 0.8;
 }
 
 /* Info */
@@ -104,19 +110,37 @@ main{
 .boxheader{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+.boxheader svg{
+    margin-right: 0.5em;
 }
 
 .bar{
     background-color: rgb(79, 79, 79);
     margin-left: 5%;
-    width:75%;
+    width:65%;
     height: 1px;
 }
 
 #about{
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#datos{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#educacion{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#cursos{
+    grid-column: 3/4;
+    grid-row: 2/3;
 }
 
 #about p{
@@ -126,4 +150,23 @@ main{
 .box{
     box-sizing: content-box;
     margin: 15px;
+}
+
+.estudiostitulo{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.educacionbox{
+    display: flex;
+}
+
+.educacionbox ul{
+    margin-right: 2em;
+    padding: 0px;
+}
+
+.estxt{
+    font-size: 0.9em;
+    padding: 0.2em;
 }
